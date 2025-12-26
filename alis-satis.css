@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+    --gold: #FFD700;
+    --dark-green: #2d6a4f;
+    --bg-color: #f8f9fa;
+    --white: #ffffff;
+    --text-main: #2c3e50;
+    --text-muted: #7f8c8d;
+    --sell-color: #2ecc71;
+    --buy-color: #3498db;
+    --shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+/* Naviqasiya (Standart) */
+.top-nav {
+    background: var(--white);
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: var(--shadow);
+}
+
+.logo { display: flex; align-items: center; gap: 10px; }
+.logo i { color: var(--gold); font-size: 24px; }
+.logo h2 { color: var(--dark-green); font-size: 22px; }
+.logo span { color: var(--gold); }
+
+.nav-menu a {
+    text-decoration: none;
+    color: var(--text-muted);
+    margin: 0 15px;
+    font-weight: 500;
+}
+
+.nav-menu a.active { color: var(--dark-green); border-bottom: 2px solid var(--gold); }
+.search-profile { display: flex; align-items: center; gap: 20px; }
+.search-profile input { padding: 8px 15px; border-radius: 20px; border: 1px solid #ddd; outline: none; }
+.profile img { width: 35px; border-radius: 50%; }
+
+/* Əsas Kontent */
+.main-wrapper {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.page-header h1 { color: var(--dark-green); font-size: 26px; }
+.page-header p { color: var(--text-muted); font-size: 14px; }
+
+.action-btns { display: flex; gap: 10px; }
+
+.btn {
+    padding: 12px 20px;
+    border-radius: 10px;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: 0.3s;
+}
+
+.btn-buy { background: var(--buy-color); color: white; }
+.btn-sell { background: var(--gold); color: var(--dark-green); }
+.btn:hover { transform: translateY(-2px); opacity: 0.9; }
+
+/* Mini Statistik Kartlar */
+.mini-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.stat-box {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    text-align: center;
+}
+
+.stat-box span { display: block; color: var(--text-muted); font-size: 13px; margin-bottom: 5px; }
+.stat-box strong { font-size: 20px; color: var(--dark-green); }
+.text-danger { color: #e74c3c !important; }
+
+/* Cədvəl Hissəsi */
+.content-card {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: var(--shadow);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.table-filters { display: flex; gap: 10px; }
+.table-filters input, .table-filters select {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    outline: none;
+}
+
+.transaction-table { width: 100%; border-collapse: collapse; }
+.transaction-table th { text-align: left; padding: 12px; color: var(--text-muted); font-size: 13px; border-bottom: 2px solid #f8f9fa; }
+.transaction-table td { padding: 15px 12px; border-bottom: 1px solid #f8f9fa; font-size: 14px; }
+
+/* Statuslar və Nişanlar */
+.type-tag {
+    padding: 4px 10px;
+    border-radius: 5px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.type-tag.sell { background: #e8f8f0; color: var(--sell-color); }
+.type-tag.buy { background: #eef5fb; color: var(--buy-color); }
+
+.status-dot {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.status-dot.paid::before { content: ""; width: 8px; height: 8px; background: var(--sell-color); border-radius: 50%; }
+.status-dot.debt::before { content: ""; width: 8px; height: 8px; background: #e74c3c; border-radius: 50%; }

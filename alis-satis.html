@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alış-Satış - Golden Fruit</title>
+    <link rel="stylesheet" href="alis-satis.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="top-nav">
+        <div class="logo">
+            <i class="fas fa-seedling"></i>
+            <h2>Golden<span>Fruit</span></h2>
+        </div>
+        <div class="nav-menu">
+            <a href="ana-sehife.html">Dashboard</a>
+            <a href="mehsullar.html">Məhsullar</a>
+            <a href="alis-satis.html" class="active">Alış/Satış</a>
+            <a href="customer.html">Müştərilər</a>
+            <a href="xerc.html">Xərclər</a>
+        </div>
+        <div class="search-profile">
+            <input type="text" placeholder="Axtarış...">
+            <div class="profile">
+                <img src="https://ui-avatars.com/api/?name=Admin&background=FFD700&color=fff" alt="Admin">
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-wrapper">
+        <header class="page-header">
+            <div>
+                <h1>Alış-Satış Əməliyyatları</h1>
+                <p>Yeni faktura yaradın və ya tarixçəyə baxın</p>
+            </div>
+            <div class="action-btns">
+                <button class="btn btn-buy"><i class="fas fa-download"></i> Yeni Alış</button>
+                <button class="btn btn-sell"><i class="fas fa-upload"></i> Yeni Satış</button>
+            </div>
+        </header>
+
+        <section class="mini-stats">
+            <div class="stat-box">
+                <span>Bugünkü Satış</span>
+                <strong>1,240 AZN</strong>
+            </div>
+            <div class="stat-box">
+                <span>Bugünkü Alış</span>
+                <strong>850 AZN</strong>
+            </div>
+            <div class="stat-box">
+                <span>Gözləyən Ödənişlər</span>
+                <strong class="text-danger">430 AZN</strong>
+            </div>
+        </section>
+
+        <div class="content-card">
+            <div class="card-header">
+                <h2>Son Əməliyyatlar</h2>
+                <div class="table-filters">
+                    <input type="date">
+                    <select>
+                        <option>Hamısı</option>
+                        <option>Satış</option>
+                        <option>Alış</option>
+                    </select>
+                </div>
+            </div>
+            
+            <table class="transaction-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Növ</th>
+                        <th>Müştəri / Tədarükçü</th>
+                        <th>Məhsul</th>
+                        <th>Məbləğ</th>
+                        <th>Tarix</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>#TR-8821</td>
+                        <td><span class="type-tag sell">Satış</span></td>
+                        <td>Ramin Hüseynov</td>
+                        <td>Çiyələk (50 kq)</td>
+                        <td>225.00 AZN</td>
+                        <td>26.12.2023</td>
+                        <td><span class="status-dot paid">Ödənilib</span></td>
+                    </tr>
+                    <tr>
+                        <td>#TR-8820</td>
+                        <td><span class="type-tag buy">Alış</span></td>
+                        <td>Zaqatala Fermer</td>
+                        <td>Feyxoa (200 kq)</td>
+                        <td>600.00 AZN</td>
+                        <td>25.12.2023</td>
+                        <td><span class="status-dot debt">Borc</span></td>
+                    </tr>
+                    <tr>
+                        <td>#TR-8819</td>
+                        <td><span class="type-tag sell">Satış</span></td>
+                        <td>Market X</td>
+                        <td>Nar (100 kq)</td>
+                        <td>280.00 AZN</td>
+                        <td>25.12.2023</td>
+                        <td><span class="status-dot paid">Ödənilib</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</body>
+</html>

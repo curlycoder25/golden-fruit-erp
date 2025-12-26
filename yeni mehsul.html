@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yeni Məhsul - Golden Fruit</title>
+    <link rel="stylesheet" href="yeni mehsul.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="top-nav">
+        <div class="logo">
+            <i class="fas fa-seedling"></i>
+            <h2>Golden<span>Fruit</span></h2>
+        </div>
+        <div class="nav-menu">
+            <a href="ana-sehife">Dashboard</a>
+            <a href="mehsullar.html">Məhsullar</a>
+            <a href="alis-satis.html">Alış/Satış</a>
+            <a href="customer.html">Müştərilər</a>
+            <a href="xerc.html">Xərclər</a>
+        </div>
+        <div class="search-profile">
+            <input type="text" placeholder="Axtarış...">
+            <div class="profile">
+                <img src="https://ui-avatars.com/api/?name=Admin&background=FFD700&color=fff" alt="Admin">
+            </div>
+        </div>
+    </nav>
+
+    <div class="form-container">
+        <header class="form-header">
+            <a href="mehsullar.html" class="back-link"><i class="fas fa-arrow-left"></i> Siyahıya qayıt</a>
+            <h1>Yeni Məhsul Əlavə Et</h1>
+            <p>Məhsul haqqında məlumatları daxil edərək bazaya əlavə edin.</p>
+        </header>
+
+        <form class="product-form">
+            <div class="form-grid">
+                <div class="form-section">
+                    <h3><i class="fas fa-info-circle"></i> Əsas Məlumatlar</h3>
+                    
+                    <div class="input-group">
+                        <label>Məhsulun Adı</label>
+                        <input type="text" placeholder="Məsələn: Viktoriya Çiyələyi" required>
+                    </div>
+
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Kateqoriya</label>
+                            <select>
+                                <option>Meyvə</option>
+                                <option>Tərəvəz</option>
+                                <option>Digər</option>
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <label>Məhsul Kodu</label>
+                            <input type="text" placeholder="#GF-000">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h3><i class="fas fa-tags"></i> Stok və Qiymət</h3>
+                    
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Miqdar (kq)</label>
+                            <input type="number" placeholder="0.00">
+                        </div>
+                        <div class="input-group">
+                            <label>Satış Qiyməti (AZN)</label>
+                            <input type="number" placeholder="0.00">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Tədarükçü</label>
+                        <input type="text" placeholder="Fermer və ya şirkət adı">
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-footer">
+                <button type="button" class="btn-cancel">Ləğv et</button>
+                <button type="submit" class="btn-submit">Məhsulu Yadda Saxla</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Məhsullar - Golden Fruit ERP</title>
+    <link rel="stylesheet" href="mehsullar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="top-nav">
+        <div class="logo">
+            <i class="fas fa-seedling"></i>
+            <h2>Golden<span>Fruit</span></h2>
+        </div>
+        <div class="nav-links">
+            <a href="ana-sehife.html">Dashboard</a>
+            <a href="mehsullar.html" class="active">Məhsullar</a>
+            <a href="alis-satis.html">Alış/Satış</a>
+            <a href="customer.html">Müştərilər</a>
+            <a href="xerc.html">Xərclər</a>
+        </div>
+        <div class="user-info">
+            <div class="search-mini">
+                <input type="text" placeholder="Axtar...">
+            </div>
+            <img src="https://ui-avatars.com/api/?name=Admin&background=FFD700&color=fff" alt="Admin">
+        </div>
+    </nav>
+
+    <div class="main-container">
+        <header class="content-header">
+            <div class="title-text">
+                <h1>Məhsul Bazası</h1>
+                <p>Ümumi stok və məhsul siyahısı</p>
+            </div>
+            <button class="add-btn">
+                <i class="fas fa-plus-circle"></i> Yeni Məhsul
+            </button>
+        </header>
+
+        <div class="table-controls">
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Məhsul adı və ya kod ilə axtarış...">
+            </div>
+            <div class="filters">
+                <select>
+                    <option>Bütün Kateqoriyalar</option>
+                    <option>Meyvə</option>
+                    <option>Tərəvəz</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="table-wrapper">
+            <table class="products-table">
+                <thead>
+                    <tr>
+                        <th>Kod</th>
+                        <th>Məhsul</th>
+                        <th>Kateqoriya</th>
+                        <th>Miqdar</th>
+                        <th>Qiymət</th>
+                        <th>Status</th>
+                        <th>Əməliyyatlar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>#GF-001</td>
+                        <td class="name-cell">
+                            <span class="avatar s-bg">Ç</span>
+                            <span>Təzə Çiyələk</span>
+                        </td>
+                        <td>Meyvə</td>
+                        <td class="qty">850 kq</td>
+                        <td>4.50 AZN</td>
+                        <td><span class="badge success">Stokda</span></td>
+                        <td class="actions">
+                            <button class="action-btn info"><i class="fas fa-eye"></i></button>
+                            <button class="action-btn edit"><i class="fas fa-edit"></i></button>
+                            <button class="action-btn delete"><i class="fas fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>#GF-002</td>
+                        <td class="name-cell">
+                            <span class="avatar f-bg">F</span>
+                            <span>Feyxoa</span>
+                        </td>
+                        <td>Meyvə</td>
+                        <td class="qty">520 kq</td>
+                        <td>3.20 AZN</td>
+                        <td><span class="badge success">Stokda</span></td>
+                        <td class="actions">
+                            <button class="action-btn info"><i class="fas fa-eye"></i></button>
+                            <button class="action-btn edit"><i class="fas fa-edit"></i></button>
+                            <button class="action-btn delete"><i class="fas fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>#GF-003</td>
+                        <td class="name-cell">
+                            <span class="avatar n-bg">N</span>
+                            <span>Nar</span>
+                        </td>
+                        <td>Meyvə</td>
+                        <td class="qty">12 kq</td>
+                        <td>2.80 AZN</td>
+                        <td><span class="badge warning">Kritik</span></td>
+                        <td class="actions">
+                            <button class="action-btn info"><i class="fas fa-eye"></i></button>
+                            <button class="action-btn edit"><i class="fas fa-edit"></i></button>
+                            <button class="action-btn delete"><i class="fas fa-trash"></i></button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</body>
+</html>

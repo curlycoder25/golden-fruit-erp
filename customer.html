@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Müştərilər - Golden Fruit</title>
+    <link rel="stylesheet" href="customer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="top-nav">
+        <div class="logo">
+            <i class="fas fa-seedling"></i>
+            <h2>Golden<span>Fruit</span></h2>
+        </div>
+        <div class="nav-menu">
+            <a href="ana-sehife.html">Dashboard</a>
+            <a href="mehsullar.html">Məhsullar</a>
+            <a href="alis-satis.html">Alış/Satış</a>
+            <a href="customer.html" class="active">Müştərilər</a>
+            <a href="xerc.html">Xərclər</a>
+        </div>
+        <div class="search-profile">
+            <input type="text" placeholder="Müştəri axtar...">
+            <div class="profile">
+                <img src="https://ui-avatars.com/api/?name=Admin&background=FFD700&color=fff" alt="Admin">
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-wrapper">
+        <header class="page-header">
+            <div class="header-text">
+                <h1>Müştəri və Tərəfdaşlar</h1>
+                <p>Müştərilərin siyahısı və cari borc vəziyyəti</p>
+            </div>
+            <button class="btn-add-customer">
+                <i class="fas fa-user-plus"></i> Yeni Müştəri
+            </button>
+        </header>
+
+        <section class="customer-stats">
+            <div class="stat-card">
+                <i class="fas fa-users"></i>
+                <div>
+                    <span>Ümumi Müştəri</span>
+                    <strong>124 nəfər</strong>
+                </div>
+            </div>
+            <div class="stat-card debt-warning">
+                <i class="fas fa-hand-holding-usd"></i>
+                <div>
+                    <span>Ümumi Alacaq (Borc)</span>
+                    <strong>5,420.00 AZN</strong>
+                </div>
+            </div>
+        </section>
+
+        <div class="content-card">
+            <div class="table-toolbar">
+                <h2>Müştəri Siyahısı</h2>
+                <div class="filter-group">
+                    <select>
+                        <option>Bütün Müştərilər</option>
+                        <option>Borcu olanlar</option>
+                        <option>VİP Müştərilər</option>
+                    </select>
+                </div>
+            </div>
+
+            <table class="customer-table">
+                <thead>
+                    <tr>
+                        <th>Müştəri</th>
+                        <th>Telefon</th>
+                        <th>Son Əməliyyat</th>
+                        <th>Ümumi Alış</th>
+                        <th>Borc Qalığı</th>
+                        <th>Əməliyyatlar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="name-cell">
+                            <div class="avatar">RN</div>
+                            <div>
+                                <span class="full-name">Rauf Nəbiyev</span>
+                                <span class="category">Topdan Satış</span>
+                            </div>
+                        </td>
+                        <td>(055) 123-45-67</td>
+                        <td>26.12.2023</td>
+                        <td>1,450.00 AZN</td>
+                        <td><span class="debt-amount high">1,200.00 AZN</span></td>
+                        <td class="actions">
+                            <button class="btn-act view"><i class="fas fa-history"></i></button>
+                            <button class="btn-act edit"><i class="fas fa-user-edit"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="name-cell">
+                            <div class="avatar orange">LH</div>
+                            <div>
+                                <span class="full-name">Lalə Hüseynova</span>
+                                <span class="category">Pərakəndə</span>
+                            </div>
+                        </td>
+                        <td>(070) 987-65-43</td>
+                        <td>25.12.2023</td>
+                        <td>450.00 AZN</td>
+                        <td><span class="debt-amount zero">0.00 AZN</span></td>
+                        <td class="actions">
+                            <button class="btn-act view"><i class="fas fa-history"></i></button>
+                            <button class="btn-act edit"><i class="fas fa-user-edit"></i></button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</body>
+</html>
